@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+:where([class^="ri-"])::before {
+    content: "\f3c2";
+}
+
+.testimonial-slide {
+    display: none;
+}
+
+.testimonial-slide.active {
+    display: block;
+}
+
+.modal {
+    display: none;
+}
+
+.modal.active {
+    display: flex;
+}
