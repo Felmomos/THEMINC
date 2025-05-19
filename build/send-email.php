@@ -29,3 +29,4 @@ $mail->Subject = "Message from " . $name;
 $mail->Body = $message;
 
 $mail->send();
+echo "email sent";
