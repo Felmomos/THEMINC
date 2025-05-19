@@ -59,11 +59,11 @@ function changeTestimonial(index) {
                         <i class="ri-user-line text-2xl text-gray-600"></i>
                     </div>
                     <div>
-                        <h4 class="font-bold">${testimonial.name}</h4>
-                        <p class="text-gray-600">${testimonial.position}</p>
+                        <h4 class="font-bold text-lg">${testimonial.name}</h4>
+                        <p class="text-gray-600 text-lg">${testimonial.position}</p>
                     </div>
                 </div>
-                <p class="text-gray-700 italic">"${testimonial.text}"</p>
+                <p class="text-gray-700 italic text-lg">"${testimonial.text}"</p>
             </div>
         </div>
     `;
@@ -86,39 +86,5 @@ function closeContactModal() {
     document.getElementById('contactModal').classList.remove('active');
 }
 
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const name = document.getElementById('formName');
-    const email = document.getElementById('formEmail');
-    const phone = document.getElementById('formPhone');
-    const details = document.getElementById('formDetails');
-    const message = document.getElementById('formMessage');
 
-    name.value = "";
-    email.value = "";
-    phone.value = "";
-    details.value = "";
-    message.value = "";
 
-    window.alert("Message sent successfully!");
-});
-
-document.getElementById('modalContactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const name = document.getElementById('modalName');
-    const email = document.getElementById('modalEmail');
-    const phone = document.getElementById('modalPhone');
-    const details = document.getElementById('modalDetails');
-    const message = document.getElementById('modalMessage');
-
-    name.value = "";
-    email.value = "";
-    phone.value = "";
-    details.value = "";
-    message.value = "";
-
-    
-    // Handle modal form submission
-    closeContactModal();
-    window.alert("Message sent successfully!");
-});

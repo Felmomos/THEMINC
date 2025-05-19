@@ -88,22 +88,3 @@ function closeContactModal() {
 
 
 
-document.getElementById('modalContactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const name = document.getElementById('modalName');
-    const email = document.getElementById('modalEmail');
-    const phone = document.getElementById('modalPhone');
-    const details = document.getElementById('modalDetails');
-    const message = document.getElementById('modalMessage');
-
-    name.value = "";
-    email.value = "";
-    phone.value = "";
-    details.value = "";
-    message.value = "";
-
-    
-    // Handle modal form submission
-    closeContactModal();
-    window.alert("Message sent successfully!");
-});
